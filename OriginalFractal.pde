@@ -1,17 +1,25 @@
 public void setup()
 {
-size(500,500);
- Fractal(0,800,2000);
-//  Fractal2(250,800,800);
+  background(0,0,0);
+  size(900,900);
+  rectMode(CENTER);
 }
-public void Fractal(int x, int y, int len) 
+public void draw()
 {
-  if(len < 5){
-circle(x, y, x+len/2);
-  }else{
-  Fractal(x,y,len/2);
-  Fractal(x + len/2,y,len/2);
-Fractal( x ,y - len/2, len/2);
-
-  }
+   color(360*(int)Math.random(),360*(int)Math.random(),360*(int)Math.random());
+  myFractal(600,350,300);
 }
+public void myFractal(int x, int y, int siz)
+{
+
+  color(360*(int)Math.random(),360*(int)Math.random(),360*(int)Math.random());
+  fill((int)(360*Math.random()),(int)(360*Math.random()),(int)(360*Math.random()));
+circle(x,y,siz);
+if(siz>5){
+                
+                  myFractal(x-siz,y,siz/2);
+                  myFractal(x+siz/2,y,siz/2);
+                   myFractal(x,y+siz,siz/2);
+                   myFractal(x,y-siz/2,siz/2);
+}
+                 }
