@@ -6,14 +6,14 @@ public void setup()
 }
 public void draw()
 {
-   color(360*(int)Math.random(),360*(int)Math.random(),360*(int)Math.random());
+  
   myFractal(600,350,300);
 }
 public void myFractal(int x, int y, int siz)
 {
 
  
-  fill(0,360,0);
+  fill((int)(360*Math.random()),(int)(360*Math.random()),(int)(360*Math.random()));
 circle(x,y,siz);
 if(siz>5){
                 
