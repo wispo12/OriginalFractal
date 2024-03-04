@@ -12,8 +12,8 @@ public void draw()
 public void myFractal(int x, int y, int siz)
 {
 
-  color(360*(int)Math.random(),360*(int)Math.random(),360*(int)Math.random());
-  fill((int)(360*Math.random()),(int)(360*Math.random()),(int)(360*Math.random()));
+  color(360*(int)Math.random,360*(int)Math.random,360*(int)Math.random);
+  fill((int)(360*Math.random),(int)(360*Math.random),(int)(360*Math.random));
 circle(x,y,siz);
 if(siz>5){
                 
