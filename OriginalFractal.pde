@@ -15,7 +15,7 @@ public void myFractal(int x, int y, int siz)
 
  // fill((int)(360*Math.random()),(int)(360*Math.random()),(int)(360*Math.random()));
 circle(x,y,siz);
-if(siz>5){
+if(siz>15){
                 
                   myFractal(x-siz,y,siz/2);
                   myFractal(x+siz/2,y,siz/2);
